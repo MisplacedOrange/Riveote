@@ -4,7 +4,7 @@ const Layout = ({ children }) => (
   <div className="layout">
     <header style={{
       // Header Style
-      background: "#202c44ff", 
+      background: "#536476", 
       padding: "1.5rem 0.5rem", 
       boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
       position: "fixed", 
@@ -18,21 +18,35 @@ const Layout = ({ children }) => (
         alignItems: "center",
         justifyContent: "space-between",
         maxWidth: "1200px",
+        maxHeight: "50px",
         margin: "0 auto",
       }}>
         <h1 style={{ 
           // Logo Style
           fontSize: "2rem", 
           fontWeight: 700, 
-          margin: 0 }}>
-          Riveo</h1>
+          margin: 0 }}> 
+            <div style={{
+            // Logo Container Style
+            display: "flex",
+            alignItems: "center",
+            gap: "0rem",
+            }}>
+            <img src="/src/assets/Riveo.png" style={{
+            // Logo Image Style
+            width: "60px",
+            height: "60px",
+            }}></img>
+          Riveo
+            </div>
+        </h1>
         <ul style={{ 
           display: "flex", 
           gap: "2rem", 
           listStyle: "none", 
           margin: 0,
           }}>
-        <li><a href="#" >Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Contact</a></li>
     </ul>

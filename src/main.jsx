@@ -8,7 +8,8 @@ createRoot(document.getElementById('root')).render(
     <Layout>
       <section style={{ 
         // Section Style
-        textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
         marginTop: "4rem",
         alignItems: "flex-start",
         maxWidth: "600px",
@@ -20,7 +21,10 @@ createRoot(document.getElementById('root')).render(
       fontWeight: 700,
       marginTop: "6rem",
       marginBottom: "1rem",
-      textAlign: "left",  }}>
+      textAlign: "left", 
+      maxWidth: "800px",
+      lineHeight: "1.4",
+      }}>
       Riveo is a minimalist quote generator built to spark inspiration
     </h2>
     <p style={{
@@ -36,13 +40,13 @@ createRoot(document.getElementById('root')).render(
       // Button Style
       alignContent: "left",
       padding: "0.5rem 2.5rem",
-      background: "#ffffffff",
+      background: "#cbcbcbff",
       color: "#000",
       border: "none",
       borderRadius: "8px",
       cursor: "pointer",
     }}>
-      Goon
+      Get Started!
     </button>
   </section>
     </Layout>
