@@ -4,7 +4,7 @@ const Layout = ({ children }) => (
   <div className="layout">
     <header style={{
       // Header Style
-      background: "#536476", 
+      background: "#4c497a", 
       padding: "1.5rem 0.5rem", 
       boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
       position: "fixed", 
