@@ -29,8 +29,10 @@ createRoot(document.getElementById('root')).render(
           textAlign: "left", 
           lineHeight: "1.4",
           maxWidth: "5",
+          fontFamily: "Arial, sans-serif",
           }}>
-          Riveo is a minimalist quote generator built to spark <span style={{ color: "#6763ac" }}>INSPIRATION.</span>
+          Riveo is a minimalist quote generator built to spark <span className="italic" style={{ color: "#6763ac" }}>INSPIRATION.</span>
+
         </h2>
         <p style={{
           // Description Style
@@ -54,7 +56,27 @@ createRoot(document.getElementById('root')).render(
         }}>
           Get Started!
         </button>
-      </section>        
+      </section> 
+        <section style={{
+          // Features Section Style  
+        display: "flex",
+        flexDirection: "column",
+        marginTop: "4rem",
+        marginLeft: "12rem",
+        marginRight: "auto", 
+        marginBottom: "4rem",
+        alignItems: "flex-start",
+        maxWidth: "900px",
+        padding: "0 2rem",
+        }}>
+          <div style={{
+            // Features Heading Style
+           
+            fontFamily: "Arial, sans-serif",
+          }}>
+
+          </div>
+        </section>
       <QuoteGenerator/>
     </Layout>
   </StrictMode>
