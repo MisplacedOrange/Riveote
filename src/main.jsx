@@ -7,7 +7,6 @@ import QuoteGenerator from './QuoteGenerator.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Layout>
-      {/* Text content section - left aligned within container */}
       <section style={{ 
         // Section Style
         display: "flex",
@@ -71,12 +70,81 @@ createRoot(document.getElementById('root')).render(
         }}>
           <div style={{
             // Features Heading Style
-           
             fontFamily: "Arial, sans-serif",
           }}>
 
           </div>
         </section>
+        <section style={{
+          // Features List Style
+            display: "flex",
+            justifyContent: "center",
+            gap: "2rem",
+            maxWidth: "1200px",
+            margin: "4rem auto",
+            padding: "0 2rem",
+            }}>
+              
+              <feature1 style={{
+                background: "#3a385f",
+                padding: "2rem",
+                borderRadius: "12px",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                flex: "1",
+              }}>
+                <h3 style={{
+                  // Feature 1 Title Style
+                  fontSize: "1.5rem",
+                  fontWeight: 600,
+                  marginBottom: "1rem",
+                  color: "#fff",
+                }}>Simple Interface</h3>
+                <p style={{
+                  // Feature 1 Description Style
+                  color: "#fff",
+                }}>A clean, distraction-free design to focus on inspiration.</p>
+              </feature1>
+              
+              <feature2 style={{
+                background: "#3a385f",
+                padding: "2rem",
+                borderRadius: "12px",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                flex: "1",
+              }}>
+                <h3 style={{
+                  // Feature 2 Title Style
+                  fontSize: "1.5rem",
+                  fontWeight: 600,
+                  marginBottom: "1rem",
+                  color: "#fff",
+                }}>Copy & Paste</h3>
+                <p style={{
+                  // Feature 2 Description Style
+                  color: "#fff",
+                }}>Instantly copy any quote to share or save for later</p>
+              </feature2>
+              
+              <feature3 style={{
+                background: "#3a385f",
+                padding: "2rem",
+                borderRadius: "12px",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                flex: "1",
+              }}>
+                <h3 style={{
+                  // Feature 3 Title Style
+                  fontSize: "1.5rem",
+                  fontWeight: 600,
+                  marginBottom: "1rem",
+                  color: "#fff",
+                }}>Simple Interface</h3>
+                <p style={{
+                  // Feature 3 Description Style
+                  color: "#fff",
+                }}>Hand-selected quotes that spark creativity and drive</p>
+              </feature3>
+            </section>
       <QuoteGenerator/>
     </Layout>
   </StrictMode>
