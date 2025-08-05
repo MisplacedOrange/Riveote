@@ -1,31 +1,33 @@
-const express = require("express");
-const cors = require("cors");
-const { Configuration, OpenAIApi } = require("openai");
-require("dotenv").config();
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import OpenAI from 'openai';
+
+dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const openai = new OpenAIApi(new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
-}));
+const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY
+});
 
-app.post("/generate-quote", async (req, res) => {
+app.post('/generate-quote', async (req, res) => {
     try {
-        const completion = await openai.createChatCompletion({
-            model: "gpt-4", // or "gpt-3.5-turbo" if you're on a budget
+        const chatCompletion = await openai.chat.completions.create({
+            model: 'gpt-4',
             messages: [
-                { role: "system", content: "You are a quote generator." },
-                { role: "user", content: "Give me one short, original motivational quote." }
-            ],
+                { role: 'system', content: 'You are a quote generator.' },
+                { role: 'user', content: 'Give me one short, original motivational quote.' }
+            ]
         });
 
-        const quote = completion.data.choices[0].message.content.trim();
+        const quote = chatCompletion.choices[0].message.content.trim();
         res.json({ quote });
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({ error: "Failed to generate quote" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Failed to generate quote' });
     }
 });
 
