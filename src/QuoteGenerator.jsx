@@ -102,6 +102,24 @@ const QuoteGenerator = () => {
     ];
     const [quote, setQuote] = useState(quotes[0]);
 
+
+    const generateQuoteFromGPT = async () => {
+        try {
+            const response = await fetch("http://localhost:5000/generate-quote", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+
+            const data = await response.json();
+            setQuote(data.quote || "Failed to fetch quote.");
+        } catch (err) {
+            console.error("GPT fetch error:", err);
+            setQuote("Something went wrong.");
+        }
+    };
+    
     const generateQuote = () => {
         let newIndex;
         do {
@@ -171,11 +189,15 @@ const QuoteGenerator = () => {
                     marginTop: "6rem",
                 }}>
                     <button onClick={copyQuote}>Copy</button>
-                    <button onClick={generateQuote}>Generate</button>
+                    <button onClick={generateQuoteFromGPT}>Generate</button>
+
                 </div>
             </section>
         </div>
     );
 };
+
+
+
 
 export default QuoteGenerator;
