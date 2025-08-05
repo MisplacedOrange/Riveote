@@ -16,7 +16,7 @@ const openai = new OpenAI({
 app.post('/generate-quote', async (req, res) => {
     try {
         const chatCompletion = await openai.chat.completions.create({
-            model: 'gpt-4',
+            model: 'gpt-3.5-turbo',
             messages: [
                 { role: 'system', content: 'You are a quote generator.' },
                 { role: 'user', content: 'Give me one short, original motivational quote.' }
