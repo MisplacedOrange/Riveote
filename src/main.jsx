@@ -18,6 +18,7 @@ createRoot(document.getElementById('root')).render(
         alignItems: "flex-start",
         maxWidth: "900px",
         padding: "0 2rem",
+        overflow: "hidden",
         }}>
         <h2 style={{ 
           // Heading Style
@@ -43,7 +44,14 @@ createRoot(document.getElementById('root')).render(
           }}>
           Fuel your next move with quotes that inspire bold thinking and creative momentum.
         </p>
-        <button style={{
+        <button 
+          onClick={()=>{
+            const quotesSection = document.getElementById('quotes');
+            if (quotesSection) {
+              quotesSection.scrollIntoView({ behavior: 'smooth', block: "center" })
+            }
+          }}
+          style={{
           // Button Style
           alignSelf: "flex-start",
           padding: "0.75rem 1.75rem",
@@ -56,7 +64,7 @@ createRoot(document.getElementById('root')).render(
           Get Started!
         </button>
       </section> 
-        <section style={{
+        <section id="features" style={{
           // Features Section Style  
         display: "flex",
         flexDirection: "column",
@@ -145,7 +153,7 @@ createRoot(document.getElementById('root')).render(
                 }}>Hand-selected quotes that spark creativity and drive</p>
               </feature3>
             </section>
-      <QuoteGenerator/>
+      <QuoteGenerator id ="quotes"/>
     </Layout>
   </StrictMode>
 );

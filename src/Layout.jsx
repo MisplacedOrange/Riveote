@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
         </h1>
         <ul className="nav-list">
           <li><a href="#" className="nav-link">Home</a></li>
-          <li><a href="#" className="nav-link">Features</a></li>
+          <li><a href="#features" className="nav-link">Features</a></li>
           <li><a href="#" className="nav-link">Contact</a></li>
         </ul>
       </nav>

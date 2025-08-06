@@ -25,6 +25,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 80vh;
+  overflow-x: hidden;
 }
 
 h1 {
