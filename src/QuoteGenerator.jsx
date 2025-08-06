@@ -100,7 +100,7 @@ const QuoteGenerator = () => {
         "Momentum doesn't come from waiting. It comes from moving.",
         "Being average is easy. Being excellent is a decision.",
     ];
-    const [quote, setQuote] = useState(quotes[0]);
+    const [quote, setQuote] = useState("Try clicking 'Generate' or pressing space to generate a new quote!");
 
 
     const generateQuoteFromGPT = async () => {
@@ -136,6 +136,7 @@ const QuoteGenerator = () => {
 
 
     useEffect(() => {
+        
         const handleKeyDown = (e) => {
             if (e.key === ' ' || e.key === 'Enter') {
                 e.preventDefault();
