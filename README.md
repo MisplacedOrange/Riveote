@@ -1,12 +1,38 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Riveo
 
-Currently, two official plugins are available:
+Riveo is a minimalist quote generator designed to inspire creativity and focus. Featuring a clean, distraction-free interface, it delivers hand-selected quotes that spark motivation and drive. Easily copy and paste any quote to share or save instantly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Authors
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [@MisplacedOrange](https://github.com/MisplacedOrange)
+- [@Crackle2k](https://github.com/Crackle2k)
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/MisplacedOrange/Riveo
+```
+
+Go to the project directory
+
+```bash
+  cd Riveo
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start!
+
+```bash
+  npm run dev
+```
+
