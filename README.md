@@ -1,7 +1,7 @@
 
-# Riveo
+# Riveote
 
-Riveo is a minimalist quote generator designed to inspire creativity and focus. Featuring a clean, distraction-free interface, it delivers hand-selected quotes that spark motivation and drive. Easily copy and paste any quote to share or save instantly.
+Riveote is a minimalist quote generator designed to inspire creativity and focus. Featuring a clean, distraction-free interface, it delivers hand-selected quotes that spark motivation and drive. Easily copy and paste any quote to share or save instantly.
 
 
 ## Authors
@@ -15,13 +15,13 @@ Riveo is a minimalist quote generator designed to inspire creativity and focus. 
 Clone the project
 
 ```bash
-  git clone https://github.com/MisplacedOrange/Riveo
+  git clone https://github.com/MisplacedOrange/Riveote
 ```
 
 Go to the project directory
 
 ```bash
-  cd Riveo
+  cd Riveote
 ```
 
 Install dependencies
