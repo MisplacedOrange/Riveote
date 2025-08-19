@@ -38,8 +38,8 @@ Start!
 
 # FAQ
 
-Q: Why does Riveote have such a simple design?
+### Q: Why does Riveote have such a simple design?
 A: Riveote was built with functionality as the main focus. The minimalist interface keeps things distraction-free so users can concentrate on the quotes themselves.
 
-Q: Why was the name changed from Riveo to Riveote?
+### Q: Why was the name changed from Riveo to Riveote?
 A: Riveo was originally just a placeholder template name. The project was rebranded to Riveote to give it a unique identity that better reflects its purpose as a quote generator.
