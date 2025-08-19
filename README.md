@@ -3,6 +3,8 @@
 
 Riveote is a minimalist quote generator designed to inspire creativity and focus. Featuring a clean, distraction-free interface, it delivers hand-selected quotes that spark motivation and drive. Easily copy and paste any quote to share or save instantly.
 
+**Riveo was a template name.
+
 
 ## Authors
 
