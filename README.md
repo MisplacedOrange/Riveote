@@ -3,8 +3,6 @@
 
 Riveote is a minimalist quote generator designed to inspire creativity and focus. Featuring a clean, distraction-free interface, it delivers hand-selected quotes that spark motivation and drive. Easily copy and paste any quote to share or save instantly.
 
-**Riveo was a template name.
-
 
 ## Authors
 
@@ -38,3 +36,10 @@ Start!
   npm run dev
 ```
 
+# FAQ
+
+Q: Why does Riveote have such a simple design?
+A: Riveote was built with functionality as the main focus. The minimalist interface keeps things distraction-free so users can concentrate on the quotes themselves.
+
+Q: Why was the name changed from Riveo to Riveote?
+A: Riveo was originally just a placeholder template name. The project was rebranded to Riveote to give it a unique identity that better reflects its purpose as a quote generator.
