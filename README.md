@@ -6,7 +6,7 @@ Riveote is a minimalist quote generator designed to inspire creativity and focus
 ## Authors
 
 - [@MisplacedOrange](https://github.com/MisplacedOrange)
-- [@Crackle2k](https://github.com/Crackle2k)
+- [@Crackle2K](https://github.com/Crackle2K)
 
 
 ## Run Locally
