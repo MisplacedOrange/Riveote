@@ -152,13 +152,11 @@ const QuoteGenerator = () => {
             maxWidth: "900px",
             margin: "2rem auto",
             width: "95%",
-            marginLeft: "15rem",
         }}>
             <h2 style={{
                 textAlign: "center",
                 color: "#fff",
                 fontSize: "2rem",
-                marginLeft: "auto",
             }}>
                 Quote Generator
             </h2>
@@ -169,7 +167,6 @@ const QuoteGenerator = () => {
                 minHeight: "130px",
                 height: "90%",
                 marginTop: "2rem",
-                marginLeft: "auto",
                 marginBottom: "2rem",
                 padding: "2rem",
                 background: "#343c46",
