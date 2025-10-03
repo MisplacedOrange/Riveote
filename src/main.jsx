@@ -201,12 +201,12 @@ createRoot(document.getElementById('root')).render(
               gap: "0.5rem",
               alignItems: "center",
             }}>
-              <a href="mailto:your.email@example.com" style={{
+              <a href="mailto:roylu0404@gmail.com" style={{
                 color: "#6763ac",
                 textDecoration: "none",
                 fontSize: "1rem",
               }}>
-                your.email@example.com
+                roylu0404@gmail.com
               </a>
               <a href="https://github.com/misplacedorange" style={{
                 color: "#6763ac",
@@ -251,7 +251,7 @@ createRoot(document.getElementById('root')).render(
               gap: "0.5rem",
               alignItems: "center",
             }}>
-              <a href="mailto:partner.email@example.com" style={{
+              <a href="mailto:dineshsinnath@gmail.com" style={{
                 color: "#6763ac",
                 textDecoration: "none",
                 fontSize: "1rem",
